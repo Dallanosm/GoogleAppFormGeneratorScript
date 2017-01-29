@@ -1,28 +1,21 @@
 <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
-<!-- CSS Botones de Google-->
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <base target="_top">
-  </head>
-  <body>
+
+<head>
+  <base target="_top">
+</head>
   
-  <p> Field the fields bellow before continuing:</p>
+<body>
+  <p>Se va a generar el test correspondiente al ID indicado.</p>
+  <p>Haga clic en 'Generar test' si desea continuar.</p>
   
-  <p>
-      <ul>
-          <li>Name</li>
-          <li>Description</li>
-          <li>Range of questions</li>
-      </ul>
+  <br>
       
-      <center>
-         <button class="blue" id="createQuickForm" onclick="google.script.run
-         .withUserObject(this)
-         .createExam()">Create exam</button>
-      </center>
-  </body>
+  <center>
+    <button class="blue" id="createQuickForm" onclick="google.script.run.withUserObject(this).generateTest()">Generar test</button>
+  </center>
+</body>
+
 </html>
-
-
